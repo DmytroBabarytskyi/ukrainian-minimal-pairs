@@ -46,9 +46,11 @@ def short(m):
 
 def t_validation():
     v = json.load(open(os.path.join(OUT, 'validation.json'), encoding='utf-8'))
-    rows = [[PHEN_NAME.get(r['phenomenon'], r['phenomenon']), r['n'],
-             '%.3f' % r['agree'], '%.3f' % r['defect_rate']]
-            for r in v['per_phenomenon']]
+    # same row order as every other table, so the two can be read side by side
+    per = {r['phenomenon']: r for r in v['per_phenomenon']}
+    rows = [[PHEN_NAME[p], per[p]['n'], '%.3f' % per[p]['agree'],
+             '%.3f' % per[p]['defect_rate']]
+            for p in PHEN_ORDER if p in per]
     cap = ("Human validation of a %d-pair sample (%.0f%% of the set) by two "
            "native speakers. Agreement is between raters; defect is the share "
            "of pairs both raters judged against the key. Cohen's kappa = %.3f "

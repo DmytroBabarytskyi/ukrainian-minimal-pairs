@@ -44,7 +44,8 @@ def fig_phenomena(d):
     ax.axhline(.5, color='0.4', lw=.8, ls='--', zorder=1)
     ax.set_xticks(list(x)); ax.set_xticklabels([LABEL[p] for p in ORDER])
     ax.set_ylim(0, 1.02); ax.set_ylabel('accuracy')
-    ax.set_title('Accuracy per phenomenon (15 models; dots = individual models)')
+    ax.set_title('Accuracy per phenomenon (%d models; dots = individual models)'
+                 % d.model.nunique())
     ax.legend(frameon=False, loc='lower left')
     save(fig, 'fig1_phenomena')
 
@@ -81,8 +82,8 @@ def fig_vocative(d):
     ax.axvline(.5, color='0.4', lw=.8, ls='--', zorder=1)
     ax.set_yticks(list(y)); ax.set_yticklabels([SHORT(m) for m in v.index], fontsize=7)
     ax.set_xlabel('accuracy'); ax.set_xlim(0, 1)
-    ax.set_title('Vocative: every model but the Ukrainian-adapted one prefers\n'
-                 'the nominative form of address')
+    ax.set_title('Vocative: multilingual models prefer the nominative form of\n'
+                 'address; the Ukrainian-adapted ones do not')
     ax.legend(frameon=False, loc='lower right', fontsize=7)
     save(fig, 'fig3_vocative')
 
