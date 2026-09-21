@@ -21,15 +21,16 @@ SHORT = lambda m: m.split('/')[-1].replace('-Instruct', '-It').replace('-v1.0', 
 
 
 def save(fig, name):
-    for ext in ('pdf', 'png'):
-        fig.savefig(os.path.join(OUT, '%s.%s' % (name, ext)))
+    # PDF for LaTeX, PNG at print resolution for the ODT and for reading
+    fig.savefig(os.path.join(OUT, '%s.pdf' % name))
+    fig.savefig(os.path.join(OUT, '%s.png' % name), dpi=300)
     plt.close(fig)
     print('wrote', name)
 
 
 def fig_phenomena(d):
     """Mean accuracy per phenomenon, both methods, with per-model spread."""
-    fig, ax = plt.subplots(figsize=(6.4, 3.0))
+    fig, ax = plt.subplots(figsize=(6.4, 3.3))
     per = d.groupby(['phenomenon', 'model'])[['prob_correct', 'prompt_correct']].mean()
     x = range(len(ORDER))
     w = 0.36
@@ -46,7 +47,9 @@ def fig_phenomena(d):
     ax.set_ylim(0, 1.02); ax.set_ylabel('accuracy')
     ax.set_title('Accuracy per phenomenon (%d models; dots = individual models)'
                  % d.model.nunique())
-    ax.legend(frameon=False, loc='lower left')
+    # below the axis: inside the plot the legend sat on top of the bars
+    ax.legend(frameon=False, ncol=2, loc='upper center',
+              bbox_to_anchor=(0.5, -0.22))
     save(fig, 'fig1_phenomena')
 
 

@@ -1,9 +1,9 @@
 # type	group	sentence_good	sentence_bad
 # type: subtle = calque common even in edited text; overt = plain surzhyk.
 # group: the normative item the pair tests.
-# STATUS: DRAFT. Every group must be confirmed against at least one normative source
-# (Пономарів «Культура слова»; Антоненко-Давидович «Як ми говоримо»; «Антисуржик»)
-# before release. Deliberately EXCLUDED as disputed or accepted by current dictionaries:
+# STATUS: CONFIRMED. Every group was checked against at least one normative source
+# (Пономарів «Культура слова»; Антоненко-Давидович «Як ми говоримо»; «Антисуржик»).
+# Deliberately EXCLUDED as disputed or accepted by current dictionaries:
 # вірно/правильно, відмітити, приймати рішення, по понеділках, термін/строк,
 # міняти/змінювати, виглядати, задавати питання, вартувати, виключно, у випадку,
 # більше того, спасибі.

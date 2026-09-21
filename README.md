@@ -55,10 +55,12 @@ MultiBLiMP, so a harness that works should score near ceiling on it.
 | Calques from Russian | 184 | брати участь / приймати участь |
 | Verb government | 60 | дякую вам / дякую вас |
 
-Normativity follows Ukrainian reference works: Serbenska, *Antysurzhyk*;
-Ponomariv, *Kultura slova*; Ukrainian Orthography (2019). Items on which those
-sources disagree, or which are contested among native speakers, were excluded
-rather than adjudicated.
+Normativity follows published sources: the Ukrainian Orthography of 2019 for the
+vocative, agreement and numeral phenomena, and Ukrainian usage handbooks
+(Ponomariv, *Kultura slova*; Antonenko-Davydovych, *Yak my hovorymo*;
+*Antysurzhyk*) for calques and verb government. Items on which those sources
+disagree, or which are contested in current usage, were excluded rather than
+adjudicated.
 
 ## Human validation
 

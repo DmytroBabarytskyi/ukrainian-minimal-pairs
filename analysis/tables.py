@@ -51,11 +51,11 @@ def t_validation():
     rows = [[PHEN_NAME[p], per[p]['n'], '%.3f' % per[p]['agree'],
              '%.3f' % per[p]['defect_rate']]
             for p in PHEN_ORDER if p in per]
-    cap = ("Human validation of a %d-pair sample (%.0f%% of the set) by two "
-           "native speakers. Agreement is between raters; defect is the share "
-           "of pairs both raters judged against the key. Cohen's kappa = %.3f "
-           "overall." % (v['n_rated'], 100 * v['n_rated'] / 1448,
-                         v['cohen_kappa']))
+    cap = ("A %d-pair sample, %.0f%% of the set, checked against the answer key "
+           "in two independent ratings. Agreement is between the two ratings; "
+           "defect is the share of pairs both placed against the key. "
+           "Cohen's kappa = %.3f overall."
+           % (v['n_rated'], 100 * v['n_rated'] / 1448, v['cohen_kappa']))
     return Table('validation', cap,
                  ['Phenomenon', 'Rated', 'Agreement', 'Defect'], rows)
 
@@ -78,16 +78,74 @@ def t_phenomena(d):
 def t_models(by):
     rows = []
     for _, r in by.iterrows():
-        rows.append([short(r.model) + ('†' if r.ua_adapted else ''),
+        rows.append([short(r.model) + (' (ua)' if r.ua_adapted else ''),
                      'IT' if r.instruct else 'PT',
                      '%.3f' % r.prob_acc, '%.3f' % r.prompt_acc,
                      '%.2f' % r.prompt_consistency])
-    cap = ("Accuracy over %d minimal pairs. PT = base, IT = instruction-tuned; "
-           "† marks Ukrainian-adapted models. Order consistency is the share of "
+    cap = ("Accuracy over {:,} minimal pairs. PT = base, IT = instruction-tuned; "
+           "(ua) marks Ukrainian-adapted models. Order consistency is the share of "
            "pairs answered the same way when the two sentences are swapped."
-           % int(by.n.iloc[0]))
+           ).format(int(by.n.iloc[0]))
     return Table('models', cap,
                  ['Model', 'Type', 'Prob.', 'Prompt', 'Order cons.'], rows)
+
+
+def t_matrix(d):
+    """Every model against every phenomenon: the benchmark's reference table."""
+    short_head = {'control_subject_verb': 'Ctrl', 'adjective_agreement': 'Adj',
+                  'numeral_noun': 'Num', 'verb_government': 'Gov',
+                  'calques': 'Calq', 'vocative': 'Voc'}
+    m = d.pivot_table(index='model', columns='phenomenon',
+                      values='prob_correct', aggfunc='mean')[PHEN_ORDER]
+    m['All'] = d.groupby('model').prob_correct.mean()
+    m = m.sort_values('All', ascending=False)
+    ua = set(d.loc[d.ua_adapted, 'model'])
+    # two decimals, dropping the leading zero: the table is 8 columns wide and
+    # every value is a proportion, so the zero carries no information. Formats
+    # first, then strips, so that a value rounding to 1.00 is not special-cased
+    # into a different width than its neighbours.
+    def fmt(v):
+        s = '%.2f' % v
+        return s[1:] if s.startswith('0') else s
+    rows = [[short(i) + (' (ua)' if i in ua else '')] + [fmt(v) for v in r]
+            for i, r in m.iterrows()]
+    cap = ("Probability accuracy for every model on every phenomenon, ordered "
+           "by overall accuracy. (ua) marks Ukrainian-adapted models. Ctrl = "
+           "subject–verb agreement (control), Adj = adjective agreement, "
+           "Num = numeral–noun agreement, Gov = verb government, "
+           "Calq = calques, Voc = vocative.")
+    return Table('matrix', cap,
+                 ['Model'] + [short_head[p] for p in PHEN_ORDER] + ['All'], rows)
+
+
+def t_calques(d):
+    """The calque items models get wrong, split by model group."""
+    cal = d[d.phenomenon == 'calques'].copy()
+    cal['kind'] = cal.group.str.split(':').str[0]
+    cal['item'] = cal.group.str.split(': ').str[1]
+    g = cal.groupby(['item', 'kind']).prob_correct.mean()
+    hard = g[g < 0.5].sort_values().reset_index()
+    # The scores carry no sentences, so take one rejected example per item from
+    # the pair set itself, to show the reader what the models prefer instead.
+    bad = {}
+    with open(os.path.join(ROOT, 'pairs', 'calques.jsonl'), encoding='utf-8') as f:
+        for line in f:
+            p = json.loads(line)
+            bad.setdefault(p['group'].split(': ', 1)[-1], p['sentence_bad'])
+    rows = []
+    for _, r in hard.iterrows():
+        sub = cal[cal.item == r['item']]
+        mult = sub[~sub.ua_adapted].prob_correct.mean()
+        ua = sub[sub.ua_adapted].prob_correct.mean()
+        rows.append([r['item'], r['kind'], bad.get(r['item'], ''),
+                     '%.2f' % mult, '%.2f' % ua])
+    cap = ("Calque items below 0.5 probability accuracy, with the non-normative "
+           "variant that models prefer, scored separately for the multilingual "
+           "and the Ukrainian-adapted models. %d of the %d items are below 0.5."
+           % (len(rows), cal.item.nunique()))
+    return Table('calques', cap,
+                 ['Normative', 'Type', 'Example of the rejected form',
+                  'Multiling.', 'Ukr.'], rows)
 
 
 def t_controlled(d):
@@ -111,14 +169,20 @@ def t_controlled(d):
         rows.append(['All phenomena', '%.3f' % b.prob_correct.mean(),
                      '%.3f' % a.prob_correct.mean(),
                      '%+.3f' % (a.prob_correct.mean() - b.prob_correct.mean())])
-        notes.append('%s: McNemar chi2 = %.1f, p = %.1e; %d pairs fixed by '
-                     'adaptation, %d broken.' % (short(adapted), chi2, pv, k, u))
+        notes.append('For %s, McNemar on the paired outcomes gives chi2 = %.1f, '
+                     'p = %.1e, with %d pairs corrected by adaptation and %d '
+                     'broken.' % (short(adapted), chi2, pv, k, u))
     if not rows:
         rows = [['(pending)', '', '', '']]
+    # The paired statistics belong in the caption: as separate note lines they
+    # rendered as loose paragraphs under the table with no marker tying them to it.
+    # the paired statistics live in the prose; repeating them here duplicated
+    # three sentences of the section on the page above the table
     cap = ("Ukrainian adaptation against the exact checkpoint it started from: "
-           "probability accuracy on the same pairs, same loading configuration.")
+           "probability accuracy on the same pairs, under the same loading "
+           "configuration. The paired tests are reported in the text.")
     return Table('controlled', cap,
-                 ['Phenomenon', 'Base', 'Adapted', 'Delta'], rows, notes)
+                 ['Phenomenon', 'Base', 'Adapted', 'Delta'], rows)
 
 
 # -------------------------------------------------------------- renderers --
@@ -187,7 +251,11 @@ def main():
 
     d = load()
     by = pd.read_csv(os.path.join(OUT, 'accuracy_by_model.csv'))
-    tables = [t_validation(), t_phenomena(d), t_models(by), t_controlled(d)]
+    # Order of appearance in the paper: 3.3, 4.1, 4.2, 4.4, 4.6, 4.7.
+    # Table numbers in the captions follow this list, so it must match the
+    # order the sections introduce them in.
+    tables = [t_validation(), t_phenomena(d), t_models(by), t_controlled(d),
+              t_matrix(d), t_calques(d)]
 
     os.makedirs(DEST, exist_ok=True)
     path = os.path.join(DEST, 'tables.html')
