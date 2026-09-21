@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Ukrainian Minimal Pairs: Knowing the Norm vs. Using the Norm"
+message: "If you use this dataset or code, please cite it as below."
+type: dataset
+authors:
+  - family-names: Babarytskyi
+    given-names: Dmytro
+    orcid: "https://orcid.org/0009-0009-3614-9601"
+    affiliation: "Kharkiv National University of Radio Electronics"
+  - family-names: Babarytskyi
+    given-names: Oleksandr
+    orcid: "https://orcid.org/0000-0002-1690-1837"
+    affiliation: "Yaroslav Mudryi National Law University"
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+keywords:
+  - Ukrainian
+  - minimal pairs
+  - grammatical evaluation
+  - large language models
+  - benchmark
+repository-code: "https://github.com/DmytroBabarytskyi/ukrainian-minimal-pairs"
+version: "1.0.0"
+date-released: "2026-09-21"

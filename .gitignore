@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.part
+analysis/out/
+# working notes and drafts: publish at camera-ready, not before review
+paper/
+DESIGN.md
+RESULTS.md
+~$*
+.ipynb_checkpoints/

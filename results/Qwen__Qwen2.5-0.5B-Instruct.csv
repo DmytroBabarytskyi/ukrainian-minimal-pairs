@@ -1,0 +1,7 @@
+model,uid,phenomenon,group,lp_good,lp_bad,ntok_good,ntok_bad,prob_correct,prompt_margin_ab,prompt_margin_ba,prompt_correct
+Qwen/Qwen2.5-0.5B-Instruct,adjective_agreement_0000,adjective_agreement,"masc noun, neut adj",-34.0836067199707,-39.038978576660156,7,7,1,-0.5977725982666016,0.7249164581298828,1
+Qwen/Qwen2.5-0.5B-Instruct,adjective_agreement_0001,adjective_agreement,"neut noun, femn adj",-35.293251037597656,-33.470035552978516,6,6,0,-0.6107847690582275,0.580747127532959,0
+Qwen/Qwen2.5-0.5B-Instruct,adjective_agreement_0002,adjective_agreement,"femn noun, masc adj",-38.1957893371582,-38.396461486816406,7,7,1,-0.5599192976951599,0.577573835849762,1
+Qwen/Qwen2.5-0.5B-Instruct,adjective_agreement_0003,adjective_agreement,"femn noun, neut adj",-41.552791595458984,-40.54415512084961,8,8,0,-0.9552203416824341,0.8479000329971313,0
+Qwen/Qwen2.5-0.5B-Instruct,adjective_agreement_0004,adjective_agreement,"neut noun, masc adj",-56.99285125732422,-51.44941329956055,8,8,0,-0.5179562568664551,0.5451202988624573,1
+Qwen/Qwen2.5-0.5B-Instruct,adjective_agreement_0005,adjective_agreement,"neut noun, femn adj",-55.601051330566406,-52.570350646972656,8,8,0,-0.8900054693222046,1.0073696970939636,1

@@ -1,0 +1,369 @@
+n,uid,phenomenon,group,good_side
+1,calques_0057,calques,subtle: зіставляти,B
+2,calques_0070,calques,subtle: становити,A
+3,vocative_0059,vocative,vocative f,A
+4,calques_0050,calques,subtle: складати іспит,B
+5,calques_0150,calques,subtle: принаймні,A
+6,calques_0066,calques,subtle: висновок,A
+7,control_subject_verb_0092,control_subject_verb,past-tense gender,A
+8,calques_0085,calques,subtle: досі,A
+9,calques_0108,calques,overt: виходити,A
+10,calques_0054,calques,subtle: навчальний,A
+11,verb_government_0007,verb_government,вибачати кому,A
+12,calques_0116,calques,subtle: виняток,B
+13,control_subject_verb_0052,control_subject_verb,past-tense gender,A
+14,calques_0030,calques,subtle: наступний,B
+15,calques_0065,calques,subtle: висновок,A
+16,verb_government_0039,verb_government,розмовляти мовою,A
+17,verb_government_0021,verb_government,опанувати що,A
+18,calques_0141,calques,subtle: бо (так як),A
+19,numeral_noun_0254,numeral_noun,5+ + gen.pl,A
+20,control_subject_verb_0190,control_subject_verb,past-tense gender,B
+21,calques_0042,calques,subtle: вважати,B
+22,calques_0017,calques,subtle: стосуватися,A
+23,calques_0130,calques,subtle: висновок,A
+24,calques_0097,calques,overt: їсти,B
+25,calques_0074,calques,subtle: ймовірно,A
+26,calques_0051,calques,subtle: складати іспит,B
+27,control_subject_verb_0060,control_subject_verb,past-tense gender,A
+28,calques_0177,calques,overt: вистачати,A
+29,verb_government_0041,verb_government,вибачати кому,B
+30,vocative_0138,vocative,vocative f,A
+31,verb_government_0052,verb_government,хворіти на що,B
+32,verb_government_0004,verb_government,дякувати кому,B
+33,verb_government_0006,verb_government,вибачати кому,B
+34,calques_0125,calques,subtle: співпрацювати,A
+35,calques_0158,calques,overt: їсти,B
+36,verb_government_0002,verb_government,дякувати кому,B
+37,vocative_0033,vocative,vocative m,B
+38,verb_government_0022,verb_government,опанувати що,A
+39,adjective_agreement_0035,adjective_agreement,"femn noun, neut adj",A
+40,numeral_noun_0296,numeral_noun,5+ + gen.pl,A
+41,vocative_0197,vocative,vocative m,A
+42,calques_0101,calques,overt: звичайно,A
+43,calques_0187,calques,overt: колишній,B
+44,calques_0115,calques,subtle: будь-який,A
+45,vocative_0031,vocative,vocative m,A
+46,calques_0169,calques,overt: бувай,A
+47,control_subject_verb_0113,control_subject_verb,past-tense gender,B
+48,calques_0096,calques,overt: подобатися,B
+49,calques_0037,calques,subtle: щодо,B
+50,adjective_agreement_0114,adjective_agreement,"masc noun, neut adj",A
+51,numeral_noun_0039,numeral_noun,2-4 + nom.pl,A
+52,calques_0179,calques,overt: зараз,A
+53,calques_0039,calques,subtle: щодо,A
+54,adjective_agreement_0025,adjective_agreement,"femn noun, neut adj",A
+55,calques_0078,calques,subtle: порушити питання,A
+56,calques_0168,calques,overt: бувай,A
+57,vocative_0200,vocative,vocative m,B
+58,adjective_agreement_0063,adjective_agreement,"femn noun, neut adj",B
+59,calques_0049,calques,subtle: укладати договір,B
+60,calques_0148,calques,subtle: зрештою,A
+61,verb_government_0001,verb_government,дякувати кому,B
+62,control_subject_verb_0068,control_subject_verb,past-tense gender,A
+63,verb_government_0009,verb_government,вибачати кому,A
+64,verb_government_0014,verb_government,навчати чого,A
+65,calques_0165,calques,overt: дуже,A
+66,calques_0181,calques,overt: зараз,A
+67,verb_government_0024,verb_government,оволодіти чим,B
+68,calques_0025,calques,subtle: доводиться,A
+69,calques_0161,calques,overt: звичайно,B
+70,calques_0146,calques,subtle: зрештою,A
+71,control_subject_verb_0032,control_subject_verb,past-tense gender,A
+72,verb_government_0017,verb_government,вчитися чого,A
+73,calques_0061,calques,subtle: перепрошую,A
+74,calques_0095,calques,overt: подобатися,A
+75,adjective_agreement_0203,adjective_agreement,"masc noun, neut adj",A
+76,verb_government_0016,verb_government,вчитися чого,A
+77,calques_0064,calques,subtle: захід,A
+78,vocative_0111,vocative,vocative m,B
+79,adjective_agreement_0046,adjective_agreement,"neut noun, femn adj",B
+80,calques_0113,calques,overt: колишній,B
+81,adjective_agreement_0282,adjective_agreement,"masc noun, femn adj",B
+82,calques_0062,calques,subtle: перепрошую,B
+83,calques_0111,calques,overt: зараз,B
+84,calques_0117,calques,subtle: щодо,A
+85,calques_0079,calques,subtle: порушити питання,A
+86,vocative_0035,vocative,vocative m,B
+87,calques_0107,calques,overt: виходити,A
+88,numeral_noun_0037,numeral_noun,2-4 + nom.pl,B
+89,adjective_agreement_0029,adjective_agreement,"masc noun, neut adj",B
+90,calques_0166,calques,overt: дуже,A
+91,verb_government_0047,verb_government,опанувати що,B
+92,control_subject_verb_0297,control_subject_verb,past-tense gender,B
+93,verb_government_0045,verb_government,вчитися чого,B
+94,verb_government_0046,verb_government,опанувати що,B
+95,adjective_agreement_0123,adjective_agreement,"masc noun, femn adj",B
+96,verb_government_0019,verb_government,опанувати що,A
+97,calques_0080,calques,subtle: оцінка,B
+98,calques_0180,calques,overt: зараз,B
+99,verb_government_0057,verb_government,сумувати за ким,B
+100,calques_0131,calques,subtle: бути,B
+101,vocative_0066,vocative,vocative m,B
+102,verb_government_0043,verb_government,навчати чого,B
+103,calques_0083,calques,subtle: бо (так як),B
+104,vocative_0041,vocative,vocative f,B
+105,calques_0073,calques,subtle: ймовірно,B
+106,calques_0038,calques,subtle: щодо,A
+107,calques_0142,calques,subtle: досі,A
+108,numeral_noun_0293,numeral_noun,5+ + gen.pl,A
+109,calques_0143,calques,subtle: досі,A
+110,control_subject_verb_0148,control_subject_verb,past-tense gender,A
+111,adjective_agreement_0031,adjective_agreement,"femn noun, masc adj",B
+112,calques_0035,calques,subtle: виняток,B
+113,verb_government_0030,verb_government,одружитися з ким,B
+114,calques_0094,calques,overt: визначити,B
+115,calques_0048,calques,subtle: укладати договір,B
+116,calques_0011,calques,subtle: протягом,A
+117,control_subject_verb_0280,control_subject_verb,past-tense gender,A
+118,adjective_agreement_0298,adjective_agreement,"femn noun, neut adj",B
+119,numeral_noun_0147,numeral_noun,2-4 + nom.pl,B
+120,control_subject_verb_0218,control_subject_verb,past-tense gender,B
+121,verb_government_0042,verb_government,навчати чого,B
+122,verb_government_0031,verb_government,одружитися з ким,B
+123,numeral_noun_0092,numeral_noun,2-4 + nom.pl,A
+124,calques_0027,calques,subtle: наступний,B
+125,verb_government_0049,verb_government,оволодіти чим,A
+126,adjective_agreement_0019,adjective_agreement,"neut noun, masc adj",A
+127,calques_0068,calques,subtle: бути,A
+128,adjective_agreement_0259,adjective_agreement,"neut noun, femn adj",B
+129,vocative_0085,vocative,vocative f,A
+130,calques_0018,calques,subtle: стосуватися,B
+131,calques_0033,calques,subtle: будь-який,B
+132,numeral_noun_0268,numeral_noun,5+ + gen.pl,A
+133,verb_government_0053,verb_government,хворіти на що,A
+134,control_subject_verb_0286,control_subject_verb,past-tense gender,A
+135,calques_0123,calques,subtle: зіставляти,B
+136,verb_government_0018,verb_government,вчитися чого,B
+137,calques_0127,calques,subtle: захід,B
+138,calques_0186,calques,overt: колишній,B
+139,calques_0167,calques,overt: бувай,A
+140,verb_government_0025,verb_government,оволодіти чим,A
+141,calques_0014,calques,subtle: збігатися,A
+142,calques_0118,calques,subtle: наводити приклад,B
+143,adjective_agreement_0077,adjective_agreement,"masc noun, neut adj",A
+144,numeral_noun_0160,numeral_noun,5+ + gen.pl,B
+145,calques_0082,calques,subtle: бо (так як),A
+146,adjective_agreement_0037,adjective_agreement,"masc noun, femn adj",A
+147,calques_0100,calques,overt: взагалі,A
+148,verb_government_0036,verb_government,розмовляти мовою,B
+149,vocative_0126,vocative,vocative f,B
+150,calques_0106,calques,overt: заважати,B
+151,calques_0128,calques,subtle: захід,A
+152,calques_0135,calques,subtle: брати до уваги,B
+153,control_subject_verb_0157,control_subject_verb,past-tense gender,A
+154,calques_0102,calques,overt: дуже,A
+155,calques_0119,calques,subtle: укладати договір,A
+156,calques_0087,calques,subtle: незважаючи,B
+157,vocative_0086,vocative,vocative m,A
+158,adjective_agreement_0214,adjective_agreement,"neut noun, masc adj",B
+159,calques_0149,calques,subtle: принаймні,B
+160,calques_0077,calques,subtle: брати до уваги,A
+161,calques_0109,calques,overt: вистачати,A
+162,verb_government_0015,verb_government,вчитися чого,B
+163,verb_government_0054,verb_government,одружитися з ким,B
+164,calques_0120,calques,subtle: складати іспит,A
+165,calques_0031,calques,subtle: будь-який,A
+166,calques_0098,calques,overt: їсти,A
+167,vocative_0242,vocative,vocative m,B
+168,calques_0140,calques,subtle: бо (так як),A
+169,verb_government_0056,verb_government,одружитися з ким,B
+170,calques_0163,calques,overt: звичайно,A
+171,calques_0024,calques,subtle: доводиться,B
+172,vocative_0145,vocative,vocative f,B
+173,calques_0178,calques,overt: вистачати,A
+174,calques_0005,calques,subtle: вживати заходів,B
+175,vocative_0158,vocative,vocative f,B
+176,control_subject_verb_0049,control_subject_verb,past-tense gender,B
+177,calques_0136,calques,subtle: порушити питання,B
+178,adjective_agreement_0024,adjective_agreement,"femn noun, masc adj",A
+179,adjective_agreement_0274,adjective_agreement,"neut noun, femn adj",B
+180,calques_0003,calques,subtle: брати участь,A
+181,calques_0151,calques,subtle: принаймні,A
+182,calques_0110,calques,overt: вистачати,A
+183,calques_0009,calques,subtle: протягом,A
+184,control_subject_verb_0254,control_subject_verb,past-tense gender,A
+185,vocative_0254,vocative,vocative m,A
+186,calques_0091,calques,overt: отримувати,A
+187,vocative_0047,vocative,vocative m,A
+188,control_subject_verb_0292,control_subject_verb,past-tense gender,A
+189,calques_0007,calques,subtle: вживати заходів,B
+190,control_subject_verb_0214,control_subject_verb,past-tense gender,A
+191,vocative_0147,vocative,vocative m,B
+192,calques_0121,calques,subtle: складати іспит,B
+193,calques_0008,calques,subtle: протягом,A
+194,numeral_noun_0294,numeral_noun,5+ + gen.pl,B
+195,calques_0002,calques,subtle: брати участь,B
+196,verb_government_0010,verb_government,вибачати кому,B
+197,calques_0010,calques,subtle: протягом,A
+198,control_subject_verb_0105,control_subject_verb,past-tense gender,A
+199,control_subject_verb_0023,control_subject_verb,past-tense gender,A
+200,calques_0160,calques,overt: взагалі,B
+201,numeral_noun_0229,numeral_noun,5+ + gen.pl,B
+202,vocative_0236,vocative,vocative m,A
+203,calques_0071,calques,subtle: становити,A
+204,calques_0154,calques,overt: визначити,A
+205,adjective_agreement_0289,adjective_agreement,"neut noun, masc adj",A
+206,numeral_noun_0020,numeral_noun,2-4 + nom.pl,A
+207,calques_0132,calques,subtle: становити,B
+208,verb_government_0035,verb_government,розмовляти мовою,A
+209,calques_0081,calques,subtle: оцінка,B
+210,calques_0015,calques,subtle: збігатися,A
+211,control_subject_verb_0073,control_subject_verb,past-tense gender,A
+212,verb_government_0028,verb_government,хворіти на що,B
+213,vocative_0228,vocative,vocative f,A
+214,numeral_noun_0253,numeral_noun,5+ + gen.pl,A
+215,verb_government_0050,verb_government,оволодіти чим,B
+216,numeral_noun_0262,numeral_noun,5+ + gen.pl,B
+217,calques_0000,calques,subtle: брати участь,B
+218,calques_0139,calques,subtle: оцінка,B
+219,calques_0183,calques,overt: гаразд,B
+220,adjective_agreement_0030,adjective_agreement,"femn noun, neut adj",B
+221,calques_0134,calques,subtle: брати до уваги,B
+222,verb_government_0048,verb_government,оволодіти чим,B
+223,verb_government_0005,verb_government,дякувати кому,A
+224,calques_0137,calques,subtle: порушити питання,B
+225,numeral_noun_0060,numeral_noun,2-4 + nom.pl,A
+226,verb_government_0032,verb_government,сумувати за ким,B
+227,calques_0185,calques,overt: колишній,B
+228,calques_0126,calques,subtle: перепрошую,A
+229,verb_government_0058,verb_government,сумувати за ким,A
+230,calques_0093,calques,overt: визначити,B
+231,verb_government_0051,verb_government,хворіти на що,A
+232,calques_0056,calques,subtle: зіставляти,A
+233,calques_0020,calques,subtle: завдяки,A
+234,numeral_noun_0127,numeral_noun,2-4 + nom.pl,A
+235,calques_0028,calques,subtle: наступний,B
+236,vocative_0011,vocative,vocative f,B
+237,verb_government_0037,verb_government,розмовляти мовою,A
+238,adjective_agreement_0217,adjective_agreement,"neut noun, femn adj",B
+239,vocative_0295,vocative,vocative m,A
+240,calques_0059,calques,subtle: співпрацювати,B
+241,numeral_noun_0233,numeral_noun,5+ + gen.pl,A
+242,control_subject_verb_0030,control_subject_verb,past-tense gender,A
+243,calques_0176,calques,overt: виходити,A
+244,verb_government_0055,verb_government,одружитися з ким,A
+245,calques_0058,calques,subtle: співпрацювати,B
+246,control_subject_verb_0160,control_subject_verb,past-tense gender,A
+247,calques_0124,calques,subtle: співпрацювати,A
+248,verb_government_0020,verb_government,опанувати що,B
+249,calques_0019,calques,subtle: завдяки,B
+250,calques_0036,calques,subtle: виняток,A
+251,calques_0090,calques,overt: отримувати,A
+252,calques_0041,calques,subtle: вважати,A
+253,calques_0172,calques,overt: здаватися,A
+254,adjective_agreement_0187,adjective_agreement,"femn noun, masc adj",A
+255,numeral_noun_0041,numeral_noun,2-4 + nom.pl,A
+256,adjective_agreement_0222,adjective_agreement,"femn noun, masc adj",A
+257,numeral_noun_0215,numeral_noun,5+ + gen.pl,A
+258,numeral_noun_0124,numeral_noun,2-4 + nom.pl,B
+259,calques_0072,calques,subtle: становити,B
+260,calques_0086,calques,subtle: незважаючи,B
+261,verb_government_0044,verb_government,вчитися чого,A
+262,calques_0092,calques,overt: отримувати,A
+263,calques_0069,calques,subtle: бути,B
+264,numeral_noun_0250,numeral_noun,5+ + gen.pl,A
+265,calques_0138,calques,subtle: оцінка,A
+266,numeral_noun_0175,numeral_noun,5+ + gen.pl,A
+267,calques_0084,calques,subtle: досі,A
+268,calques_0152,calques,overt: отримувати,B
+269,calques_0055,calques,subtle: зіставляти,A
+270,calques_0157,calques,overt: їсти,B
+271,numeral_noun_0077,numeral_noun,2-4 + nom.pl,B
+272,calques_0103,calques,overt: бувай,B
+273,calques_0016,calques,subtle: стосуватися,A
+274,calques_0122,calques,subtle: навчальний,A
+275,verb_government_0000,verb_government,дякувати кому,A
+276,verb_government_0026,verb_government,хворіти на що,A
+277,calques_0045,calques,subtle: наводити приклад,A
+278,calques_0155,calques,overt: подобатися,B
+279,numeral_noun_0285,numeral_noun,5+ + gen.pl,B
+280,calques_0075,calques,subtle: ймовірно,B
+281,adjective_agreement_0109,adjective_agreement,"neut noun, femn adj",A
+282,numeral_noun_0084,numeral_noun,2-4 + nom.pl,A
+283,calques_0052,calques,subtle: навчальний,B
+284,verb_government_0013,verb_government,навчати чого,B
+285,calques_0105,calques,overt: заважати,A
+286,calques_0145,calques,subtle: незважаючи,B
+287,verb_government_0033,verb_government,сумувати за ким,A
+288,calques_0043,calques,subtle: вважати,A
+289,calques_0013,calques,subtle: збігатися,B
+290,calques_0129,calques,subtle: висновок,B
+291,control_subject_verb_0232,control_subject_verb,past-tense gender,B
+292,control_subject_verb_0238,control_subject_verb,past-tense gender,B
+293,control_subject_verb_0288,control_subject_verb,past-tense gender,A
+294,numeral_noun_0153,numeral_noun,5+ + gen.pl,A
+295,calques_0029,calques,subtle: наступний,A
+296,calques_0032,calques,subtle: будь-який,B
+297,control_subject_verb_0272,control_subject_verb,past-tense gender,B
+298,verb_government_0027,verb_government,хворіти на що,B
+299,calques_0147,calques,subtle: зрештою,B
+300,calques_0099,calques,overt: взагалі,B
+301,calques_0046,calques,subtle: наводити приклад,B
+302,calques_0162,calques,overt: звичайно,A
+303,verb_government_0040,verb_government,розмовляти мовою,B
+304,calques_0006,calques,subtle: вживати заходів,A
+305,adjective_agreement_0044,adjective_agreement,"neut noun, masc adj",B
+306,calques_0156,calques,overt: подобатися,A
+307,calques_0021,calques,subtle: завдяки,B
+308,numeral_noun_0179,numeral_noun,5+ + gen.pl,B
+309,vocative_0181,vocative,vocative f,A
+310,verb_government_0012,verb_government,навчати чого,A
+311,adjective_agreement_0165,adjective_agreement,"femn noun, neut adj",A
+312,calques_0022,calques,subtle: завдяки,B
+313,adjective_agreement_0295,adjective_agreement,"femn noun, neut adj",B
+314,verb_government_0029,verb_government,одружитися з ким,A
+315,calques_0144,calques,subtle: незважаючи,A
+316,calques_0026,calques,subtle: доводиться,B
+317,calques_0053,calques,subtle: навчальний,B
+318,control_subject_verb_0276,control_subject_verb,past-tense gender,A
+319,calques_0076,calques,subtle: брати до уваги,A
+320,calques_0004,calques,subtle: вживати заходів,B
+321,calques_0067,calques,subtle: бути,A
+322,calques_0001,calques,subtle: брати участь,A
+323,calques_0175,calques,overt: виходити,A
+324,control_subject_verb_0299,control_subject_verb,past-tense gender,B
+325,calques_0023,calques,subtle: доводиться,B
+326,calques_0171,calques,overt: здаватися,B
+327,calques_0174,calques,overt: заважати,A
+328,calques_0173,calques,overt: заважати,A
+329,calques_0170,calques,overt: здаватися,A
+330,verb_government_0008,verb_government,вибачати кому,B
+331,control_subject_verb_0096,control_subject_verb,past-tense gender,B
+332,adjective_agreement_0299,adjective_agreement,"neut noun, masc adj",A
+333,verb_government_0038,verb_government,розмовляти мовою,A
+334,numeral_noun_0214,numeral_noun,5+ + gen.pl,A
+335,calques_0034,calques,subtle: виняток,B
+336,calques_0133,calques,subtle: ймовірно,A
+337,verb_government_0011,verb_government,навчати чого,A
+338,verb_government_0034,verb_government,сумувати за ким,B
+339,calques_0159,calques,overt: взагалі,B
+340,numeral_noun_0174,numeral_noun,5+ + gen.pl,A
+341,calques_0184,calques,overt: гаразд,A
+342,calques_0044,calques,subtle: наводити приклад,A
+343,adjective_agreement_0202,adjective_agreement,"masc noun, neut adj",A
+344,calques_0114,calques,subtle: стосуватися,B
+345,calques_0104,calques,overt: здаватися,A
+346,calques_0063,calques,subtle: захід,B
+347,verb_government_0023,verb_government,оволодіти чим,B
+348,numeral_noun_0185,numeral_noun,5+ + gen.pl,B
+349,adjective_agreement_0048,adjective_agreement,"neut noun, femn adj",A
+350,calques_0089,calques,subtle: принаймні,B
+351,verb_government_0059,verb_government,сумувати за ким,A
+352,vocative_0030,vocative,vocative f,B
+353,vocative_0252,vocative,vocative f,A
+354,calques_0060,calques,subtle: перепрошую,A
+355,calques_0012,calques,subtle: збігатися,B
+356,calques_0047,calques,subtle: укладати договір,A
+357,calques_0088,calques,subtle: зрештою,B
+358,calques_0164,calques,overt: дуже,A
+359,vocative_0177,vocative,vocative m,A
+360,calques_0153,calques,overt: визначити,A
+361,calques_0182,calques,overt: гаразд,A
+362,vocative_0203,vocative,vocative m,B
+363,vocative_0229,vocative,vocative f,B
+364,vocative_0205,vocative,vocative m,A
+365,control_subject_verb_0285,control_subject_verb,past-tense gender,A
+366,calques_0040,calques,subtle: вважати,A
+367,calques_0112,calques,overt: гаразд,B
+368,verb_government_0003,verb_government,дякувати кому,A
