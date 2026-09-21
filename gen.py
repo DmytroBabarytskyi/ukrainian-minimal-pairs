@@ -4,10 +4,11 @@
 Output: pairs/<phenomenon>.jsonl, one pair per line:
   {"uid", "phenomenon", "group", "sentence_good", "sentence_bad",
    "word_diff", "len_equal", "source"}
-Every pair differs by exactly one word unless len_equal is False or word_diff > 1,
-which the evaluation reports separately.
+word_diff counts contiguous edited spans after alignment, so a pair that swaps
+one construction for another of a different length still counts as one edit.
 """
 import csv, json, os, random
+from difflib import SequenceMatcher
 import pymorphy3
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -28,10 +29,17 @@ def read_tsv(name):
 
 
 def diff_stats(good, bad):
+    """Number of contiguous edited spans, and whether the word counts match.
+
+    Aligned with difflib rather than compared position by position: a one-word
+    construction replaced by a two-word one ("протягом" / "на протязі") shifts
+    every later word, which a positional diff would report as many differences
+    when linguistically there is exactly one.
+    """
     g, b = good.split(), bad.split()
-    if len(g) != len(b):
-        return max(len(g), len(b)) - sum(x == y for x, y in zip(g, b)), False
-    return sum(x != y for x, y in zip(g, b)), True
+    blocks = sum(1 for op, *_ in SequenceMatcher(a=g, b=b).get_opcodes()
+                 if op != 'equal')
+    return blocks, len(g) == len(b)
 
 
 def pair(phen, group, good, bad, source, i):

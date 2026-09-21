@@ -5,8 +5,12 @@ lexical phenomena, with a scoring harness that evaluates a language model in
 two ways: by comparing sentence probabilities, and by asking the model directly
 which sentence is correct.
 
-Every pair differs in exactly one word or one form. One member conforms to the
-norms of standard Ukrainian; the other does not.
+Every pair differs in exactly **one edited span**: one word, one form, or one
+construction replaced by another. One member conforms to the norms of standard
+Ukrainian; the other does not. In 44 pairs the two members have different word
+counts, because the construction that changes has a different length on each
+side («протягом року» / «на протязі року»); `word_diff` and `len_equal` record
+this for every pair.
 
 ```json
 {"uid": "vocative_0001", "phenomenon": "vocative", "group": "vocative m",
